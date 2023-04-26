@@ -71,40 +71,41 @@ extern int yydebug;
     inp = 277,
     output = 278,
     let = 279,
-    CHARPTR = 280,
-    INT = 281,
-    RETURN = 282,
-    ID = 283,
-    NUM = 284,
-    STRING = 285,
-    COMMA = 286,
-    SEMICOLON = 287,
-    PLUS = 288,
-    MINUS = 289,
-    MULTI = 290,
-    ASSIGN = 291,
-    DIV = 292,
-    OPAR = 293,
-    CPAR = 294,
-    OBRACE = 295,
-    CBRACE = 296,
-    EQUALTO = 297,
-    NEQUALTO = 298,
-    LESSEQ = 299,
-    GREATEQ = 300,
-    LESS = 301,
-    GREAT = 302,
-    WHILE = 303,
-    IF = 304,
-    ELSE = 305,
-    FNNAME = 306,
-    OBRACKET = 307,
-    CBRACKET = 308,
-    ARR_NAME = 309,
-    AND = 310,
-    OR = 311,
-    LAND = 312,
-    LOR = 313
+    DECNUM = 280,
+    CHARPTR = 281,
+    INT = 282,
+    RETURN = 283,
+    ID = 284,
+    NUM = 285,
+    STRING = 286,
+    COMMA = 287,
+    SEMICOLON = 288,
+    PLUS = 289,
+    MINUS = 290,
+    MULTI = 291,
+    ASSIGN = 292,
+    DIV = 293,
+    ORB = 294,
+    CRB = 295,
+    OpBRACE = 296,
+    ClBRACE = 297,
+    EQUALTO = 298,
+    NEQUALTO = 299,
+    LESSEQ = 300,
+    GREATEQ = 301,
+    LESS = 302,
+    GREAT = 303,
+    WHILE = 304,
+    IF = 305,
+    ELSE = 306,
+    FNNAME = 307,
+    OBRACKET = 308,
+    CBRACKET = 309,
+    ARR_NAME = 310,
+    AND = 311,
+    OR = 312,
+    LAND = 313,
+    LOR = 314
   };
 #endif
 /* Tokens.  */
@@ -130,40 +131,41 @@ extern int yydebug;
 #define inp 277
 #define output 278
 #define let 279
-#define CHARPTR 280
-#define INT 281
-#define RETURN 282
-#define ID 283
-#define NUM 284
-#define STRING 285
-#define COMMA 286
-#define SEMICOLON 287
-#define PLUS 288
-#define MINUS 289
-#define MULTI 290
-#define ASSIGN 291
-#define DIV 292
-#define OPAR 293
-#define CPAR 294
-#define OBRACE 295
-#define CBRACE 296
-#define EQUALTO 297
-#define NEQUALTO 298
-#define LESSEQ 299
-#define GREATEQ 300
-#define LESS 301
-#define GREAT 302
-#define WHILE 303
-#define IF 304
-#define ELSE 305
-#define FNNAME 306
-#define OBRACKET 307
-#define CBRACKET 308
-#define ARR_NAME 309
-#define AND 310
-#define OR 311
-#define LAND 312
-#define LOR 313
+#define DECNUM 280
+#define CHARPTR 281
+#define INT 282
+#define RETURN 283
+#define ID 284
+#define NUM 285
+#define STRING 286
+#define COMMA 287
+#define SEMICOLON 288
+#define PLUS 289
+#define MINUS 290
+#define MULTI 291
+#define ASSIGN 292
+#define DIV 293
+#define ORB 294
+#define CRB 295
+#define OpBRACE 296
+#define ClBRACE 297
+#define EQUALTO 298
+#define NEQUALTO 299
+#define LESSEQ 300
+#define GREATEQ 301
+#define LESS 302
+#define GREAT 303
+#define WHILE 304
+#define IF 305
+#define ELSE 306
+#define FNNAME 307
+#define OBRACKET 308
+#define CBRACKET 309
+#define ARR_NAME 310
+#define AND 311
+#define OR 312
+#define LAND 313
+#define LOR 314
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED

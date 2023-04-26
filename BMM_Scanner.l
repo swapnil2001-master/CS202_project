@@ -26,8 +26,10 @@
 (OUTPUT)                    {return output;}
 (LET)                       {return let;}
 
+[A-Z]                       {printf("Variable name for array\n"); return arr_name;}
 (return)					{printf(yyout,"RETURN STATEMENT\n"); 			 return RETURN;}
 [0-9]+						{printf(yyout,"NUMBER: %s\n",yytext); 		yylval =strdup(yytext); return NUM;}
+[0-9]*"."[0-9]+				{printf("DEC NUMBER: %s\n",yytext); 		yylval =strdup(yytext); return DECNUM;}
 \,							{printf(yyout,"COMMA    : ,\n"); 				 return COMMA;}
 \;							{printf(yyout,"SEMICOLON: ;\n");				 return SEMICOLON;}
 
@@ -60,10 +62,10 @@
 
 	     
 							/*braces/parenthesis*/
-"{"							{fprintf(yyout,"OPENING BRACE: {\n"); return OBRACE;}
-"}"							{fprintf(yyout,"CLOSING BRACE: }\n"); return CBRACE;}
-"("							{fprintf(yyout,"OPENING PARENTHESIS: (\n"); return OPAR;}
-")"							{fprintf(yyout,"CLOSING PARENTHESIS: )\n"); return CPAR;}
+"{"							{fprintf(yyout,"OPENING BRACE: {\n"); return OpBRACE;}
+"}"							{fprintf(yyout,"CLOSING BRACE: }\n"); return ClBRACE;}
+"("							{fprintf(yyout,"OPENING PARENTHESIS: (\n"); return ORB;}
+")"							{fprintf(yyout,"CLOSING PARENTHESIS: )\n"); return CRB;}
 "["							{fprintf(yyout,"OPENING BRACKET: [\n"); return OBRACKET;}
 "]"							{fprintf(yyout,"CLOSING BRACKET: [\n"); return CBRACKET;}
 
