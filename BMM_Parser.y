@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
+/* code */
 int yylex();
 int yyparse();
 void yyerror() {printf("not valid!\n");}
